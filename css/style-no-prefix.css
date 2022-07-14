@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    background-repeat: no-repeat;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a:focus{
+    outline: none;
+}
+
+/* Header */
+
+.header-wrapper{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header__content{
+   padding: 22px 0 31px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.header__logo{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.header__logo-img{
+    margin-right: 30px;
+}
+
+.header__logo-text{
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    color: #005FA3;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 22px 0;
+}
+
+.header__info-list,
+.header__links-list{
+    display: flex;
+}
+
+.header__info-list{
+    gap: 5px 40px;
+}
+
+.header__info-item{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: black;
+    background-position: center left;
+}
+
+.header-phone{
+    padding-left: 25px;
+    background-image: url(../img/svg/phone.svg);
+}
+
+.header-clock{
+    padding-left: 32px;
+    background-image: url(../img/svg/clock.svg);
+}
+
+.header-letter{
+    padding-left: 36px;
+    background-image: url(../img/svg/letter.svg);
+}
+
+.header-location{
+    padding-left: 32px;
+    background-image: url(../img/svg/location.svg);
+}
+
+.header__links-list{
+    gap: 5px 68px;
+}
+
+.header__links-link{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #222222;
+    text-decoration: none;
+}
