@@ -17,6 +17,7 @@ body{
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
+    font-size: 18px;
 }
 
 img{
@@ -28,13 +29,13 @@ a:focus{
     outline: none;
 }
 
-/* Header */
-
-.header-wrapper{
+.wrapper{
     max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
 }
+
+/* Header */
 
 .header__content{
    padding: 22px 0 31px;
@@ -81,6 +82,7 @@ a:focus{
     line-height: 17px;
     color: black;
     background-position: center left;
+    text-shadow: 0px 0px 0px black;
 }
 
 .header-phone{
@@ -116,3 +118,84 @@ a:focus{
     color: #222222;
     text-decoration: none;
 }
+
+/* Intro */
+
+.intro{
+    background-image: url(../img/jpg/intro.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.intro__content{
+    padding: 170px 0 113px 0;
+}
+
+.intro__title{
+    max-width: 589px;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 66px;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.intro__link{
+    display: inline-block;
+    padding: 19px 56px;
+    background-color: #005FA3;
+    color: white;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+    margin-bottom: 70px;
+}
+
+.intro__slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.intro__slider-circles{
+    display: flex;
+    gap: 0 40px;
+}
+
+.intro__slider-circle{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    opacity: .4;
+}
+
+.intro__slider-circle:nth-child(3){
+    opacity: 1;
+}
+
+.intro__slider-arrows{
+    display: flex;
+    align-items: center;
+}
+
+.intro__slider-arrow{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/svg/intro-arrow.svg);
+    background-position: center center;
+    cursor: pointer;
+}
+
+.intro__slider-arrow:first-child{
+    background-color: rgb(255, 255, 255, .2);
+}
+
+.intro__slider-arrow:last-child{
+    background-color: rgb(255, 255, 255, .4);
+    transform: rotate(180deg);
+}
+
