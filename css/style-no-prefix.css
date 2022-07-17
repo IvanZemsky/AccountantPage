@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
 
 @font-face {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     src: url('../fonts/lato/Lato-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     src: url('../fonts/lato/Lato-Black.ttf') format('truetype');
     font-style: normal;
     font-weight: 900;
@@ -40,7 +40,7 @@ html{
 }
 
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -59,6 +59,31 @@ a:focus{
     max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+/* title and subtitle */
+
+.page__title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+}
+
+.page__subtitle{
+    display: block;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
+}
+
+.services__title{
+    margin-bottom: 40px;
 }
 
 /* Header */
@@ -225,6 +250,56 @@ a:focus{
 }
 
 /* Services */
+
+.services{
+    background-color: #EBEBEB;
+}
+
+.services__content{
+    padding: 140px 0;
+}
+
+.services__subtitle{
+    margin-bottom: 102px;
+}
+
+.services__cards{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(280px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+.services__card{
+    position: relative;
+}
+
+.services__card-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.services__card-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 45px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+}
+
+.services__card-info_blue{
+    background: linear-gradient(0deg, rgba(0, 95, 163, 0.65), rgba(0, 95, 163, 0.65));
+}
 
 
 
