@@ -44,6 +44,7 @@ body{
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
+    color: black;
 }
 
 img{
@@ -81,6 +82,55 @@ a:focus{
     font-size: 48px;
     line-height: 69px;
     color: #333333;
+}
+
+/* slider */
+
+.page-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.page-slider__circles{
+    display: flex;
+    gap: 40px;
+}
+
+.page-slider__circle{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #005FA3;
+    opacity: 0.4;
+}
+
+.page-slider__circle:nth-child(3){
+    opacity: 1;
+}
+
+.page-slider__arrows{
+    display: flex;
+}
+
+.page-slider__arrow{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/svg/intro-arrow.svg);
+    background-position: center center;
+    cursor: pointer;
+}
+
+.page-slider__arrow:first-child{
+    background-color: rgba(0, 95, 163, .2);
+}
+
+.page-slider__arrow:last-child{
+    background-color: rgb(0, 95, 163);
+    transform: rotate(180deg);
 }
 
 /* Header */
@@ -400,52 +450,50 @@ a:focus{
     align-items: center;
 }
 
-.clients__slider{
+/* Reviews */
+
+.reviews__content{
+    padding: 140px 0;
+}
+
+.reviews__subtitle{
+    margin-bottom: 80px;
+}
+
+.reviews__comment{
+    padding: 45px 95px;
+    background-color: #EBEBEB;
+    margin-bottom: 50px;
+}
+
+.reviews__comment-text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 58px;
+}
+
+.reviews__comment-author{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 30px;
+    align-items: center;
+    gap: 35px;
 }
 
-.clients__slider-circles{
-    display: flex;
-    gap: 40px;
+.reviews__comment-name{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
 }
 
-.clients__slider-circle{
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: #005FA3;
-    opacity: 0.4;
+.reviews__comment-about{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #4F4F4F;
 }
 
-.clients__slider-circle:nth-child(3){
-    opacity: 1;
-}
 
-.clients__slider-arrows{
-    display: flex;
-}
-
-.clients__slider-arrow{
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-image: url(../img/svg/intro-arrow.svg);
-    background-position: center center;
-    cursor: pointer;
-}
-
-.clients__slider-arrow:first-child{
-    background-color: rgba(0, 95, 163, .2);
-}
-
-.clients__slider-arrow:last-child{
-    background-color: rgb(0, 95, 163);
-    transform: rotate(180deg);
-}
 
 
 
