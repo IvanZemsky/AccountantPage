@@ -250,51 +250,20 @@ a:focus{
     margin-bottom: 70px;
 }
 
-.intro__slider{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.intro__slider-circles{
-    display: flex;
-    gap: 0 40px;
-}
-
-.intro__slider-circle{
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+.intro-slider__circle{
     background-color: white;
-    opacity: .4;
 }
 
 .intro__slider-circle:nth-child(3){
     opacity: 1;
 }
 
-.intro__slider-arrows{
-    display: flex;
-    align-items: center;
-}
-
-.intro__slider-arrow{
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-image: url(../img/svg/intro-arrow.svg);
-    background-position: center center;
-    cursor: pointer;
-}
-
-.intro__slider-arrow:first-child{
+.intro-slider__arrow:first-child{
     background-color: rgb(255, 255, 255, .2);
 }
 
-.intro__slider-arrow:last-child{
+.intro-slider__arrow:last-child{
     background-color: rgb(255, 255, 255, .4);
-    transform: rotate(180deg);
 }
 
 /* Services */
