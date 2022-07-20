@@ -56,6 +56,13 @@ a:focus{
     outline: none;
 }
 
+input,
+textarea,
+button{
+    outline: none;
+    border: 0;
+}
+
 .wrapper{
     max-width: 1140px;
     padding: 0 15px;
@@ -460,6 +467,144 @@ a:focus{
     font-size: 14px;
     line-height: 19px;
     color: #4F4F4F;
+}
+
+/* Connect */
+
+.connect{
+    background-image: url(../img/jpg/intro.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.connect__content{
+    padding: 122px 0 140px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: minmax(350px, 470px) 540px;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.connect__info{
+    color: white;
+}
+
+.connect__title{
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    margin-bottom: 60px;
+}
+
+.connect__desc{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 80px;
+    max-width: 445px;
+}
+
+.connect__span{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:  20px 40px;
+}
+
+.connect__phone,
+.connect__email{
+    display: block;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+}
+
+.connect__phone{
+    padding-left: 32.5px;
+    background-image: url(../img/svg/footer-phone.svg);
+    background-position: center left 0;
+}
+
+.connect__email{
+    padding-left: 54.5px;
+    background-image: url(../img/svg/footer-letter.svg);
+    background-position: center left 0;
+}
+
+.connect__message-form{
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 30px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+.connect__message-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.connect__message-label{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.connect__message-input,
+.connect__message-textarea{
+    background-color: inherit;
+    border-bottom: 1px solid #FFFFFF;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #BDBDBD;
+}
+
+.connect__message-input{
+    padding: 0 0 15px 0;
+}
+
+.connect__message-input::placeholder,
+.connect__message-textarea::placeholder{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #BDBDBD;
+}
+
+.connect__message-wrap:last-child{
+    grid-column: 1 / 3;
+}
+
+.connect__message-textarea{
+    padding: 0 0 5px 0;
+    height: 105px;
+    resize: none;
+    overflow: hidden;
+}
+
+.connect__message-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 60px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    background-color: #005FA3;
+    padding: 0;
+    margin-left: auto;
 }
 
 
