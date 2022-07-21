@@ -129,6 +129,7 @@ button{
     background-image: url(../img/svg/intro-arrow.svg);
     background-position: center center;
     cursor: pointer;
+    transition: .2s;
 }
 
 .page-slider__arrow:first-child{
@@ -137,6 +138,15 @@ button{
 
 .page-slider__arrow:last-child{
     background-color: rgb(0, 95, 163);
+    transform: rotate(180deg);
+}
+
+.page-slider__arrow:first-child:hover{
+    background-color: rgba(0, 95, 163, .4);
+}
+
+.page-slider__arrow:last-child:hover{
+    background-color: rgb(0, 73, 125);
     transform: rotate(180deg);
 }
 
@@ -224,6 +234,10 @@ button{
     text-decoration: none;
 }
 
+.header__links-link:hover{
+    color: #626262;
+}
+
 /* Intro */
 
 .intro{
@@ -255,6 +269,11 @@ button{
     line-height: 25px;
     text-decoration: none;
     margin-bottom: 70px;
+    transition: .2s;
+}
+
+.intro__link:hover{
+    background-color: #005897;
 }
 
 .intro-slider__circle{
@@ -272,6 +291,12 @@ button{
 .intro-slider__arrow:last-child{
     background-color: rgb(255, 255, 255, .4);
 }
+
+.intro-slider__arrow:last-child:hover,
+.intro-slider__arrow:first-child:hover{
+    background-color: rgb(127, 127, 127);
+}
+
 
 /* Services */
 
@@ -393,11 +418,21 @@ button{
     font-size: 14px;
     line-height: 17px;
     color: #005FA3;
+    align-self: flex-start;
     margin-top: auto;
+    transition: .2s;
+}
+
+.about__block-link:hover{
+    color: #006fbe;
 }
 
 .about__block:last-child .about__block-link{
     color: white;
+}
+
+.about__block:last-child .about__block-link:hover{
+    color: rgb(231, 231, 231);
 }
 
 /* Clients */
@@ -605,9 +640,28 @@ button{
     background-color: #005FA3;
     padding: 0;
     margin-left: auto;
+    transition: .2s;
 }
 
+.connect__message-button:hover{
+    background-color: #005897;
+}
 
+/* Footer */
+
+.footer__content{
+    padding: 50px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.footer__text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+}
 
 
 
