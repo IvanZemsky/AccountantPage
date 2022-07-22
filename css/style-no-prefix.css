@@ -152,6 +152,10 @@ button{
 
 /* Header */
 
+.info-menu{
+    display: none;
+}
+
 .header__content{
    padding: 22px 0 31px;
    display: flex;
@@ -662,6 +666,37 @@ button{
     font-size: 14px;
     line-height: 19px;
 }
+
+/* Media queries */
+
+@media (max-width: 950px) {
+    
+    .info-menu{
+        display: block;
+        font-family: 'Merriweather';
+        width: 30px;
+        height: 30px;
+        background-color: #005FA3;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+
+    .header__info-list{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        background-color: white;
+    }
+
+}
+
 
 
 
