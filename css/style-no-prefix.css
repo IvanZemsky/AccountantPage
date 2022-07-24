@@ -340,19 +340,20 @@ button{
 
 .services__cards{
     display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(280px, auto));
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .services__card{
     position: relative;
+    overflow: hidden;
 }
 
 .services__card-img{
     object-fit: cover;
-    height: 280px;
-    width: 100%;
+    min-width: 100%;
+    height: auto;
 }
 
 .services__card-info{
@@ -829,6 +830,13 @@ button{
         justify-content: space-between;
     }
 
+    /* services */
+
+    .services__cards{
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     /* connect */
 
     .connect__content{
@@ -867,6 +875,11 @@ button{
     .reviews__content,
     .connect__content{
         padding: 75px 0;
+    }
+
+    .services__cards{
+        grid-template-rows: repeat(6, 280px);
+        grid-template-columns: 1fr;
     }
 
 }
