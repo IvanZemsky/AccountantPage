@@ -352,8 +352,8 @@ button{
 
 .services__card-img{
     object-fit: cover;
-    min-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .services__card-info{
@@ -706,8 +706,8 @@ button{
         border-radius: 2px;
         background-color: #005FA3;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 15px;
+        right: 15px;
         z-index: 105;
     }
 
@@ -769,6 +769,11 @@ button{
         background-color: white;
         z-index: 100;
         transform: translateY(-100%);
+        transition: .2s;
+    }
+
+    .header__info-list_active{
+        transform: translateY(0);
     }
 
     .header__info-item{
@@ -811,6 +816,11 @@ button{
         background-color: white;
         z-index: 100;
         transform: translateY(-100%);
+        transition: .2s;
+    }
+
+    .header__links-list_active{
+        transform: translateY(0);
     }
 
     .header__links-link{
@@ -952,6 +962,10 @@ button{
         padding-top: 3px;
         font-size: 20px;
         line-height: 20px;
+    }
+
+    .services__card-info{
+        padding: 30px;
     }
 
     .connect__message-button{
