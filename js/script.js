@@ -9,15 +9,3 @@
         menu.classList.remove('header__info-list_active');
     });
 }());
-
-(function () {
-    const burgerItem = document.querySelector('.links-menu');
-    const menu = document.querySelector('.header__links-list');
-    const menuCloseItem = document.querySelector('.links-close');
-    burgerItem.addEventListener('click', () => {
-        menu.classList.add('header__links-list_active');
-    });
-    menuCloseItem.addEventListener('click', () => {
-        menu.classList.remove('header__links-list_active');
-    });
-}());
